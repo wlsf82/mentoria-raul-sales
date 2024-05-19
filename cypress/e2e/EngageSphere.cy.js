@@ -10,6 +10,6 @@ describe('EngageSphere', () => {
   it('shows a customized greeting when name is provided', () => {
     cy.get('input[type="text"][placeholder="Enter your name"]').type('Raul')
 
-    cy.contains('p', 'Hi Raul')
+    cy.contains('p', 'Hi Raul').should('be.visible')
   })
 })
